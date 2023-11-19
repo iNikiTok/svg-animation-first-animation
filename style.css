@@ -1,0 +1,147 @@
+body{
+    background-color: rgb(94, 170, 203);
+}
+#Vector_16{
+    animation: search 10s infinite cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+@keyframes search{
+    0%,
+    100%{
+        transform: translate(0);
+    }
+    40%{
+        transform: translate(100px, -100px);
+    }
+    60%{
+        transform: translate(20px, -80px);
+    }
+    80%{
+        transform: translate(-90px, -120px);
+    }
+}
+#Succese{
+    animation: succese 10s infinite;
+    position: absolute;
+}
+@keyframes succese{
+    0%,
+    100%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    50%,65%{
+        opacity: 1;
+    }
+    79%{
+        opacity: 0;
+    }
+}
+#SearchInput{
+    animation: SearchInput 10s infinite linear;
+}@keyframes SearchInput{
+    0%,
+    100%{
+        transform: scaleX(0);
+    }
+    25%{
+        transform: scaleX(50%);    
+    }
+    50%,65%{
+        transform: scaleX(100%);
+    }
+    79%{
+        transform: scaleX(0);
+    }
+}
+#Comment2{
+    animation: Comment2 20s infinite cubic-bezier(0.08, 0.89, 0.32, 1.28);
+    }
+    @keyframes Comment2{
+        0%,
+        100%{
+            transform: translateY(0);
+        }
+        10%{
+            opacity: 0;
+        }
+        32%{
+            opacity: 0;
+            transform: translateY(0);
+        }
+        33%{
+            transform: translateY(-90px);
+            opacity: 1;
+        }
+        65%{
+            transform: translateY(-90px);
+            
+        }
+        66%{
+            transform: translateY(-45px);
+        }
+        99%{
+            transform: translateY(-45px);
+        }
+        
+    }
+    #Comment{
+        animation: Comment 20s infinite cubic-bezier(0.08, 0.89, 0.32, 1.28);
+        }
+        @keyframes Comment{
+            0%,
+            100%{
+                transform: translateY(0);
+                opacity: 1;
+            }
+            32%{
+                transform: translateY(0);
+            }
+            33%{
+                transform: translateY(45px);
+                opacity: 1;
+            }
+            65%{
+                transform: translateY(45px);
+                
+            }
+            66%{
+                transform: translateY(90px);
+            }
+            95%{
+                opacity: 1;
+            }
+            99%{
+                transform: translateY(90px);
+                opacity: 0;
+            }
+        }
+    #Comment1{
+        animation: Comment1 20s infinite cubic-bezier(0.08, 0.89, 0.32, 1.28);
+    }
+    @keyframes Comment1{
+        0%,
+        100%{
+            transform: translateY(0);
+        }
+        32%{
+            transform: translateY(0);
+        }
+        33%{
+            transform: translateY(45px);
+        }64%{
+            opacity: 1;
+        }
+        65%{
+            transform: translateY(45px);
+            opacity: 0;
+        }
+        66%{
+            transform: translateY(-35px);
+            opacity: 1;
+        }
+        99%{
+            transform: translateY(-35px);
+        }
+    }
